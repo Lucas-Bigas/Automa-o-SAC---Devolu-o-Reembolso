@@ -32,18 +32,20 @@ public class Troca {
     @Test
     public void test() throws InterruptedException {
         //Inserindo o numero do pedido
-       driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600087162");
+       driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600095195");
         //Evento do click no botão pesquisar
        driver.findElement (By.id("ctl00_MainContainer_PnlFiltros_BtnPesquisar_CD")).click();
         //Evento de clicar no botão nova troca
        driver.findElement(By.id("ctl00_MainContainer_btnTroca_B")).click();
         //Evento de clicar no combo
+        Thread.sleep(1000);
        driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_chkProduto_S_D")).click();
         //Aguardar os elementos carregarem
        Thread.sleep(1000);
         //Evento do click para apresentar a lista de objetivo
        driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_B-1']")).click();
         //Selecionando a opção devolução
+        Thread.sleep(1000);
        driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_DDD_L_LBI3T0']")).click();
         Thread.sleep(1000);
        //Evento click para apresentar a lista de motivos
@@ -52,9 +54,10 @@ public class Troca {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbMotivo_DDD_L_LBI4T0']")).click();
         //Clicar na aba Dados para coleta/Postagem
+        Thread.sleep(1000);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T1T")).click();
         //Selecionando o tipo de postagem
-        driver.findElement(By.linkText("//*[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosTroca_pnlDadosTrocaPostagemColeta_radAutorizacaoItemPequeno_S_D']")).click();
+        driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosTroca_pnlDadosTrocaPostagemColeta_radAutorizacaoItemPequeno_S_D")).click();
         //Clicando na aba Reembolso
         driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_T3T']")).click();
         //Clicar no campo Banco para apresentar a lista

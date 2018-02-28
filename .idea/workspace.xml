@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="425bf026-d09a-405d-8ffb-dc19e5dc1513" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.classpath" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_opera_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AutomacaoSAC.eml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AutomacaoSAC.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/AutomacaoSAC.userlibraries" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ProcessoTroca/Troca.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/ProcessoTroca/Troca.class" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProcessoTroca/Troca.java" afterPath="$PROJECT_DIR$/src/test/java/ProcessoTroca/Troca.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,8 +18,8 @@
       <file leaf-file-name="Troca.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ProcessoTroca/Troca.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="301">
+              <caret line="34" column="106" lean-forward="false" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -366,18 +331,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Troca_test - 2018.02.28 at 10h 59m 12s.xml">
-      <configuration name="Troca.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Troca_test - 2018.02.28 at 11h 11m 52s.xml">
-      <configuration name="Troca.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Troca_test - 2018.02.28 at 11h 13m 20s.xml">
-      <configuration name="Troca.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Troca_test - 2018.02.28 at 11h 14m 14s.xml">
-      <configuration name="Troca.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Troca_test - 2018.02.28 at 11h 19m 52s.xml">
       <configuration name="Troca.test" configurationId="JUnit" />
     </history-entry>
@@ -394,6 +347,18 @@
       <configuration name="Troca.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Troca_test - 2018.02.28 at 11h 53m 14s.xml">
+      <configuration name="Troca.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Troca_test - 2018.02.28 at 18h 27m 23s.xml">
+      <configuration name="Troca.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Troca_test - 2018.02.28 at 18h 28m 25s.xml">
+      <configuration name="Troca.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Troca_test - 2018.02.28 at 18h 29m 05s.xml">
+      <configuration name="Troca.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Troca_test - 2018.02.28 at 18h 48m 38s.xml">
       <configuration name="Troca.test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -537,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProcessoTroca/Troca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        <state relative-caret-position="301">
+          <caret line="34" column="106" lean-forward="false" selection-start-line="34" selection-start-column="106" selection-end-line="34" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
