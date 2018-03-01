@@ -57,18 +57,23 @@ public class Troca {
         Thread.sleep(1000);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T1T")).click();
         //Selecionando o tipo de postagem
+        Thread.sleep(1000);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosTroca_pnlDadosTrocaPostagemColeta_radAutorizacaoItemPequeno_S_D")).click();
         //Clicando na aba Reembolso
+        Thread.sleep(1000);
         driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_T3T']")).click();
         //Clicar no campo Banco para apresentar a lista
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_cmbBancoReembolsoEstorno_B-1']")).click();
         //Selecionando o banco
+        Thread.sleep(1000);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_cmbBancoReembolsoEstorno_DDD_L_LBI162T0")).click();
         //Preencher o campo Agencia
-        driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtAgenciaReembolsoEstorno_I")).sendKeys("3093");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtAgenciaReembolsoEstorno_I']")).sendKeys (Keys.HOME + "3093");
         //Preencher o campo Conta Corrente
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtContaReembolsoEstorno_I")).sendKeys("222212-2");
-        //Clicando na aba confirmar
+       //Clicando na aba confirmar
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T6T")).click();
         //Clicando no botão Confirmar Processo
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlConfirmacao_btnConfirmarProcesso_CD")).click();
