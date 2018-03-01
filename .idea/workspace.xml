@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="425bf026-d09a-405d-8ffb-dc19e5dc1513" name="Default" comment="Quarto commit">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Evidencias/Generator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Evidencias/Screenshot.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AutomacaoSAC.iml" afterPath="$PROJECT_DIR$/AutomacaoSAC.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ProcessoDevolucao/Devolucao.java" afterPath="$PROJECT_DIR$/src/test/java/ProcessoDevolucao/Devolucao.java" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ProcessoTroca/Troca.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +19,8 @@
       <file leaf-file-name="Devolucao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ProcessoDevolucao/Devolucao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="947">
-              <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state relative-caret-position="374">
+              <caret line="34" column="70" lean-forward="true" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -607,8 +601,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ProcessoDevolucao/Devolucao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="947">
-          <caret line="80" column="8" lean-forward="true" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        <state relative-caret-position="374">
+          <caret line="34" column="70" lean-forward="true" selection-start-line="34" selection-start-column="70" selection-end-line="34" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -24,8 +24,8 @@ public class Devolucao {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://172.18.52.80:9000/");
         //Login	usuário e senha
-        driver.findElement(By.name("ctl02$TxtUserName")).sendKeys("lucas.menezes");
-        driver.findElement(By.name("ctl02$TxtPassword")).sendKeys("Luc@s2010" + Keys.ENTER);
+        driver.findElement(By.name("ctl02$TxtUserName")).sendKeys("teste.automacao");
+        driver.findElement(By.name("ctl02$TxtPassword")).sendKeys("123456" + Keys.ENTER);
         //Direcionar direto para a pagina requerida
         driver.get("http://172.18.52.80:9000/PedidoPesquisar.aspx");
 
@@ -78,7 +78,7 @@ public class Devolucao {
        //Clicando na aba confirmar
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T6T")).click();
         //Clicando no botão Confirmar Processo
-        
+
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlConfirmacao_btnConfirmarProcesso_CD")).click();
         Screenshot.tirar(driver, "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut" + Generator.dataHoraParaArquivo() + "DevolucaoComReembolso.png");
 
