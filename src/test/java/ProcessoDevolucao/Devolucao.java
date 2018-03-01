@@ -4,7 +4,9 @@ import Evidencias.Generator;
 import Evidencias.Screenshot;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
@@ -31,26 +33,30 @@ public class Devolucao {
 
     }
 
+    @Rule
+    public TestName test = new TestName();
+
     @Test
-    public void DevolucaoComReembolso () throws InterruptedException {
+    public void DevolucaoComReembolso() throws InterruptedException {
         //Inserindo o numero do pedido
-       driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600095195");
+        driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600095195");
         //Evento do click no botão pesquisar
-       driver.findElement (By.id("ctl00_MainContainer_PnlFiltros_BtnPesquisar_CD")).click();
+        driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_BtnPesquisar_CD")).click();
         //Evento de clicar no botão nova troca
-       driver.findElement(By.id("ctl00_MainContainer_btnTroca_B")).click();
+        driver.findElement(By.id("ctl00_MainContainer_btnTroca_B")).click();
+
         //Evento de clicar no combo
         Thread.sleep(2000);
-       driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_chkProduto_S_D")).click();
+        driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_chkProduto_S_D")).click();
         //Aguardar os elementos carregarem
-       Thread.sleep(2000);
+        Thread.sleep(2000);
         //Evento do click para apresentar a lista de objetivo
-       driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_B-1']")).click();
+        driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_B-1']")).click();
         //Selecionando a opção devolução
         Thread.sleep(2000);
-       driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_DDD_L_LBI3T0']")).click();
+        driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_DDD_L_LBI3T0']")).click();
         Thread.sleep(2000);
-       //Evento click para apresentar a lista de motivos
+        //Evento click para apresentar a lista de motivos
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbMotivo_B-1']")).click();
         //Selecionando o motivo,
         Thread.sleep(2000);
@@ -72,17 +78,19 @@ public class Devolucao {
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_cmbBancoReembolsoEstorno_DDD_L_LBI162T0")).click();
         //Preencher o campo Agencia
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtAgenciaReembolsoEstorno_I']")).sendKeys (Keys.HOME + "3093");
+        driver.findElement(By.xpath("//input[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtAgenciaReembolsoEstorno_I']")).sendKeys(Keys.HOME + "3093");
         //Preencher o campo Conta Corrente
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtContaReembolsoEstorno_I")).sendKeys("222212-2");
-       //Clicando na aba confirmar
+        //Clicando na aba confirmar
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T6T")).click();
         //Clicando no botão Confirmar Processo
-
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlConfirmacao_btnConfirmarProcesso_CD")).click();
-        Screenshot.tirar(driver, "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut" + Generator.dataHoraParaArquivo() + "DevolucaoComReembolso.png");
+        Thread.sleep(2000);
+        String screenshotArquivo = "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut\\" + Generator.dataHoraParaArquivo() + test.getMethodName() + ".png";
+        Screenshot.tirar(driver, screenshotArquivo);
+    }
 
-}
+
 
     @AfterClass
     public static void tearDown() {
