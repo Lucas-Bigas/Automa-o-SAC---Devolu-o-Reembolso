@@ -46,44 +46,45 @@ public class Devolucao {
         driver.findElement(By.id("ctl00_MainContainer_btnTroca_B")).click();
 
         //Evento de clicar no combo
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_chkProduto_S_D")).click();
         //Aguardar os elementos carregarem
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         //Evento do click para apresentar a lista de objetivo
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_B-1']")).click();
         //Selecionando a opção devolução
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbObjetivo_DDD_L_LBI3T0']")).click();
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         //Evento click para apresentar a lista de motivos
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbMotivo_B-1']")).click();
         //Selecionando o motivo,
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlItensPedido_rptItensPedido_ctl00_cmbMotivo_DDD_L_LBI4T0']")).click();
         //Clicar na aba Dados para coleta/Postagem
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T1T")).click();
         //Selecionando o tipo de postagem
-        Thread.sleep(2000);
+        Thread.sleep(1700);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosTroca_pnlDadosTrocaPostagemColeta_radAutorizacaoItemPequeno_S_D")).click();
         //Clicando na aba Reembolso
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.xpath(".//*[@id='ctl00_MainContainer_PageTrocaDevolucao_T3T']")).click();
         //Clicar no campo Banco para apresentar a lista
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//td[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_cmbBancoReembolsoEstorno_B-1']")).click();
         //Selecionando o banco
-        Thread.sleep(2000);
+        Thread.sleep(1500);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_cmbBancoReembolsoEstorno_DDD_L_LBI162T0")).click();
         //Preencher o campo Agencia
-        Thread.sleep(2000);
+        Thread.sleep(1700);
         driver.findElement(By.xpath("//input[@id='ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtAgenciaReembolsoEstorno_I']")).sendKeys(Keys.HOME + "3093");
         //Preencher o campo Conta Corrente
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlDadosReembolsoEstorno_txtContaReembolsoEstorno_I")).sendKeys("222212-2");
         //Clicando na aba confirmar
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_T6T")).click();
         //Clicando no botão Confirmar Processo
+        Thread.sleep(1500);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlConfirmacao_btnConfirmarProcesso_CD")).click();
         Thread.sleep(2000);
         String screenshotArquivo = "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut\\" + Generator.dataHoraParaArquivo() + test.getMethodName() + ".png";
@@ -91,15 +92,13 @@ public class Devolucao {
     }
 
 
-
     @AfterClass
     public static void tearDown() {
+       //Fecha apenas a aba que usou
+       //driver.close();
 
-        //Fecha apenas a aba que usou
-        //driver.close();
-
-        //Fecha a janela do browser
-       //driver.quit( );
+       //Fecha a janela do browser
+       driver.quit( );
 
     }
 }
