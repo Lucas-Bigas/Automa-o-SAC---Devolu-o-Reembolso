@@ -1,4 +1,4 @@
-package ProcessoTroca;
+package ProcessoDevolucao;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -7,7 +7,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
-public class Troca {
+public class Devolucao {
 
     //instanciando a classe webdriver
     static WebDriver driver;
