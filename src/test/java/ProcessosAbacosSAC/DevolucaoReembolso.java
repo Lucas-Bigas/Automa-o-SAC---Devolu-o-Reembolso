@@ -1,7 +1,7 @@
 package ProcessosAbacosSAC;
 
-import Evidencias.Generator;
-import Evidencias.Screenshot;
+import Suporte.Generator;
+import Suporte.Screenshot;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -16,14 +16,14 @@ public class DevolucaoReembolso {
 
     @BeforeClass
     public static void setUp() {
-        // dizer onde esta esse executaveis chrome
+        // dizer onde esta os executaveis chrome ou FireFox
         System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
         //System.setProperty("webdriver.gecko.driver", "c:/geckodriver.exe");
         //driver = new FirefoxDriver();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://172.18.52.80:9000/");
-        //Login	usuário e senha
+        //Paginas	usuário e senha
         driver.findElement(By.name("ctl02$TxtUserName")).sendKeys("teste.automacao");
         driver.findElement(By.name("ctl02$TxtPassword")).sendKeys("123456" + Keys.ENTER);
         //Direcionar direto para a pagina requerida
@@ -34,7 +34,7 @@ public class DevolucaoReembolso {
     @Test
     public void DevolucaoComReembolso() throws InterruptedException {
         //Inserindo o numero do pedido
-        driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600096538");
+        driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_TxtCodigoExterno1_I")).sendKeys("600279862");
         //Evento do click no botão pesquisar
         driver.findElement(By.id("ctl00_MainContainer_PnlFiltros_BtnPesquisar_CD")).click();
         Screenshot.tirar(driver, "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut\\" + Generator.dataHoraParaArquivo() + "Tela Inicio.png");
@@ -89,7 +89,7 @@ public class DevolucaoReembolso {
         //Clicando no botão Confirmar Processo
         Thread.sleep(1500);
         driver.findElement(By.id("ctl00_MainContainer_PageTrocaDevolucao_pnlConfirmacao_btnConfirmarProcesso_CD")).click();
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         Screenshot.tirar(driver, "C:\\Users\\lucas.menezes\\Documents\\EvidenciasAut\\" + Generator.dataHoraParaArquivo() + "Protocolo.png");
     }
 

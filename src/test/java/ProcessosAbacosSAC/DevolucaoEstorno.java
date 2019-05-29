@@ -1,7 +1,7 @@
 package ProcessosAbacosSAC;
 
-import Evidencias.Generator;
-import Evidencias.Screenshot;
+import Suporte.Generator;
+import Suporte.Screenshot;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -19,14 +19,14 @@ public class DevolucaoEstorno {
 
         @BeforeClass
         public static void setUp() {
-            // dizer onde esta esse executaveis chrome
+            // dizer onde esta os executaveis chrome ou FireFox
             System.setProperty("webdriver.chrome.driver", "c:/chromedriver.exe");
             //System.setProperty("webdriver.gecko.driver", "c:/geckodriver.exe");
             //driver = new FirefoxDriver();
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             driver.get("http://172.18.52.80:9000/");
-            //Login	usuário e senha
+            //Paginas	usuário e senha
             driver.findElement(By.name("ctl02$TxtUserName")).sendKeys("teste.automacao");
             driver.findElement(By.name("ctl02$TxtPassword")).sendKeys("123456" + Keys.ENTER);
             //Direcionar direto para a pagina requerida
